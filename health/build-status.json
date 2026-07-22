@@ -1,7 +1,1 @@
-{
-  "source_pull": "pass",
-  "tests": "pass",
-  "dvc_repro": "pass",
-  "dvc_artifact_push": "blocked",
-  "blocker": "AWS refresh token expired; run aws login, then dvc push -r s3.biobricks.ai"
-}
+{"status":"built-artifact-push-blocked","local_build":"pass","tests":"4 passed","rdf_parse":"pass (rapper full artifact)","coverage_thresholds":"pass (unchanged)","ontology_policy":"pass (no uncontrolled local predicates or classes)","artifact":"brick/new-zealand-hsno-rdf.nt","artifact_push":"blocked","blocker":"AWS refresh token expired; run aws login, then dvc push -r s3.biobricks.ai"}
