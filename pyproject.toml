@@ -1,0 +1,8 @@
+[project]
+name = "new-zealand-hsno-rdf"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = ["biobricks>=0.3", "pandas>=2.0", "pyarrow>=14", "rdflib>=7.0"]
+
+[dependency-groups]
+dev = ["pytest>=8"]
