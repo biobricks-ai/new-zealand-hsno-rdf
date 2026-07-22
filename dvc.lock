@@ -1,0 +1,26 @@
+schema: '2.0'
+stages:
+  build:
+    cmd: uv run biobricks pull && uv run python stages/convert.py
+    deps:
+    - path: .bb/dependencies.txt
+      hash: md5
+      md5: d4f5d6141c1e4db341ec045b517eba7b
+      size: 17
+    - path: stages/convert.py
+      hash: md5
+      md5: 357e2d3f2ec5dfb90f650c9e4459f47c
+      size: 4859
+    outs:
+    - path: brick/new-zealand-hsno-rdf.nt
+      hash: md5
+      md5: 1ff1c044bff86fe0ef6920be878fc8e6
+      size: 47341288
+    - path: reports/ontology-health.json
+      hash: md5
+      md5: d73a584b60129c6cb7e06256671d31c8
+      size: 70
+    - path: reports/source-coverage.json
+      hash: md5
+      md5: 18d237a9bd594d2de549aadf29bbee5d
+      size: 286
